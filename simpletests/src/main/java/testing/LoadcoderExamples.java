@@ -77,8 +77,8 @@ public class LoadcoderExamples {
 				.throttle(2, PER_SECOND, PER_THREAD)
 				// start the 10 threads under 30 seconds
 				.rampup(10 * SECOND)
-				// execute the test under 60 seconds
-				.stopDecision(duration(20 * SECOND))
+				// execute the test under 30 seconds
+				.stopDecision(duration(30 * SECOND))
 				.build();
 
 		RuntimeChart chart = new RuntimeChart();
