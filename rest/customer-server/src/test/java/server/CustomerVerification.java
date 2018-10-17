@@ -1,15 +1,11 @@
 package server;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 
@@ -27,7 +23,6 @@ public class CustomerVerification {
 
 	@Test
 	public void testRetrieveStudentCourse() {
-		Assert.fail();
 		HttpEntity<String> entity = new HttpEntity<String>("");
 
 

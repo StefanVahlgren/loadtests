@@ -26,7 +26,6 @@ public class OddsVerification {
 
 	@Test
 	public void testRetrieveStudentCourse() {
-		Assert.fail();
 		HttpEntity<String> entity = new HttpEntity<String>("");
 
 		ResponseEntity<String> response = restTemplate.exchange(

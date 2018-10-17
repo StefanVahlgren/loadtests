@@ -14,13 +14,12 @@ import com.loadcoder.result.Result;
 import com.loadcoder.statics.SummaryUtils;
 
 /**
- * This test will NOT run automatically at mvn test since the class doesnt end with Test
+ * This test will NOT run automatically at mvn test since the class doesn't end with Test
  */
 public class CustomerLoad {
 
 	@Test
 	public void loadCustomerLoadScenario() {
-		Assert.fail();
 		Load load = new LoadBuilder(LoadScenarios.customerScenario("http://localhost:8090"))
 				.amountOfThreads(10)
 				.rampup(20 * SECOND)
