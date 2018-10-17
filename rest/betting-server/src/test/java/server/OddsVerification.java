@@ -1,5 +1,6 @@
 package server;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.skyscreamer.jsonassert.JSONAssert;
@@ -16,7 +17,7 @@ import dto.Customer;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = BettingApp.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class TestingIT {
+public class OddsVerification {
 
 	@LocalServerPort
 	private int port;
@@ -25,7 +26,7 @@ public class TestingIT {
 
 	@Test
 	public void testRetrieveStudentCourse() {
-
+		Assert.fail();
 		HttpEntity<String> entity = new HttpEntity<String>("");
 
 		ResponseEntity<String> response = restTemplate.exchange(
